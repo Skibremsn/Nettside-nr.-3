@@ -1,0 +1,33 @@
+rmasjonssiden)
+html
+Kopier kode
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasjon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Informasjon</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Hjem</a>
+        <a href="informasjon.html">Informasjon</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+
+    <section>
+        <h2>Viktig informasjon</h2>
+        <p>Her finner du informasjon om våre tjenester, produkter og tilbud.</p>
+    </section>
+
+    <footer>
+        <p>© 2024 - Alle rettigheter reservert</p>
+    </footer>
+</body>
+</html>
