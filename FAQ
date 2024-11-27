@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>FAQ</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Hjem</a>
+        <a href="informasjon.html">Informasjon</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+
+    <section>
+        <h2>Vanlige spørsmål</h2>
+        <p>Her finner du svar på ofte stilte spørsmål:</p>
+        <ul>
+            <li><strong>Spørsmål 1:</strong> Hvordan kan jeg bestille? <br> <em>Du kan bestille via vår nettside eller kontakte oss direkte.</em></li>
+            <li><strong>Spørsmål 2:</strong> Hva er leveringstiden? <br> <em>Normalt leverer vi innen 3-5 virkedager.</em></li>
+            <li><strong>Spørsmål 3:</strong> Kan jeg returnere varer? <br> <em>Ja, du kan returnere varer innen 14 dager.</em></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2024 - Alle rettigheter reservert</p>
+    </footer>
+</body>
+</html>
