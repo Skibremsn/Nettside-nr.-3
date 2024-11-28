@@ -3,20 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hjem</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Velkommen til vår moderne nettside! Utforsk informasjon, kontakt oss, eller få svar på dine spørsmål.">
+    <meta name="keywords" content="hjemmeside, informasjon, kontakt, FAQ">
+    <title>Velkommen til vår nettside</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Fargepalett */
+        :root {
+            --primary-color: orange;
+            --secondary-color: black;
+            --background-color: white;
+            --text-color: black;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header og navigasjon */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--secondary-color);
+            color: var(--background-color);
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: var(--background-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Utdragbar meny for mobile enheter */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .menu-toggle div {
+            width: 25px;
+            height: 3px;
+            background-color: var(--background-color);
+            margin: 4px 0;
+        }
+
+        nav.mobile-menu {
+            display: none;
+            flex-direction: column;
+            background-color: var(--secondary-color);
+            padding: 20px;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            border-radius: 5px;
+        }
+
+        nav.mobile-menu a {
+            margin-bottom: 10px;
+        }
+
+        /* Hovedseksjon */
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        section p {
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--background-color);
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        /* Responsiv design */
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            nav.mobile-menu {
+                display: flex;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Velkommen til vår nettside</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <a href="index.html">Hjem</a>
+            <a href="informasjon.html">Informasjon</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+        <nav class="mobile-menu">
+            <a href="index.html">Hjem</a>
+            <a href="informasjon.html">Informasjon</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
     </header>
-
-    <nav>
-        <a href="index.html">Hjem</a>
-        <a href="informasjon.html">Informasjon</a>
-        <a href="kontakt.html">Kontakt</a>
-        <a href="faq.html">FAQ</a>
-    </nav>
 
     <section>
         <h2>Hjemmeside</h2>
@@ -24,7 +161,14 @@
     </section>
 
     <footer>
-        <p>© 2024 - Alle rettigheter reservert</p>
+        <p>© 2024 - Alle rettigheter reservert | Kontakt: <a href="mailto:eksempel@epost.no">eksempel@epost.no</a></p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.mobile-menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
 </body>
 </html>
