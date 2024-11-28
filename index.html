@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Velkommen til vår moderne nettside! Utforsk informasjon, kontakt oss, eller få svar på dine spørsmål.">
-    <meta name="keywords" content="hjemmeside, informasjon, kontakt, FAQ">
-    <title>Velkommen til vår nettside</title>
+    <meta name="description" content="Innovativ bremse for rulleski. Øk sikkerheten og oppdag skiglede året rundt med Skibremsen.">
+    <meta name="keywords" content="Skibrems, rulleski, sikkerhet, innovasjon, trening">
+    <title>Skibremsen – Innovativ sikkerhet for rulleski</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* Fargepalett */
@@ -25,73 +25,38 @@
             line-height: 1.6;
         }
 
-        /* Header og navigasjon */
         header {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
+            gap: 15px;
             background-color: var(--secondary-color);
             color: var(--background-color);
             padding: 20px;
+        }
+
+        header img {
+            height: 100px;
         }
 
         header h1 {
             margin: 0;
-            font-size: 1.8rem;
+            font-size: 2rem;
         }
 
-        nav {
-            display: flex;
-            gap: 15px;
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
         }
 
-        nav a {
-            color: var(--background-color);
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: var(--primary-color);
-        }
-
-        /* Utdragbar meny for mobile enheter */
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-
-        .menu-toggle div {
-            width: 25px;
-            height: 3px;
-            background-color: var(--background-color);
-            margin: 4px 0;
-        }
-
-        nav.mobile-menu {
-            display: none;
-            flex-direction: column;
-            background-color: var(--secondary-color);
-            padding: 20px;
-            position: absolute;
-            top: 60px;
-            right: 20px;
-            border-radius: 5px;
-        }
-
-        nav.mobile-menu a {
-            margin-bottom: 10px;
-        }
-
-        /* Hovedseksjon */
-        section {
+        .container {
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
 
         section h2 {
@@ -101,15 +66,54 @@
         }
 
         section p {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
-        /* Footer */
+        .placeholder {
+            text-align: center;
+            margin: 40px 0;
+            padding: 20px;
+            border: 2px dashed var(--secondary-color);
+            border-radius: 10px;
+        }
+
+        .placeholder img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .cta {
+            text-align: center;
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .cta a {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: var(--secondary-color);
+            color: var(--background-color);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            transform: scale(1.05);
+        }
+
         footer {
             background-color: var(--secondary-color);
             color: var(--background-color);
             text-align: center;
             padding: 10px;
+            margin-top: 20px;
         }
 
         footer a {
@@ -117,58 +121,81 @@
             text-decoration: none;
         }
 
-        /* Responsiv design */
-        @media (max-width: 768px) {
-            nav {
-                display: none;
+        .social-media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .social-media a img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-media a img:hover {
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 600px) {
+            header img {
+                height: 70px;
             }
 
-            .menu-toggle {
-                display: flex;
+            header h1 {
+                font-size: 1.5rem;
             }
 
-            nav.mobile-menu {
-                display: flex;
+            .cta {
+                padding: 10px;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Velkommen til vår nettside</h1>
-        <div class="menu-toggle" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <nav>
-            <a href="index.html">Hjem</a>
-            <a href="informasjon.html">Informasjon</a>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="faq.html">FAQ</a>
-        </nav>
-        <nav class="mobile-menu">
-            <a href="index.html">Hjem</a>
-            <a href="informasjon.html">Informasjon</a>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="faq.html">FAQ</a>
-        </nav>
+        <img src="logo.png" alt="Skibremsen logo - Innovativ bremse for rulleski">
+        <h1>Skibrems'n UB</h1>
+        <p>Trygg og kjapp, brems med en knapp!</p>
     </header>
 
-    <section>
-        <h2>Hjemmeside</h2>
-        <p>Dette er vår hovedside. Utforsk menyen for mer informasjon!</p>
-    </section>
+    <div class="container">
+        <section>
+            <h2>Om produktet</h2>
+            <p>Skibremsen er en innovativ bremse som kan enkelt monteres på rulleski. Produktet gjør det tryggere og mer tilgjengelig for nybegynnere å utforske gleden ved rulleski.</p>
+            <p>Vår løsning bidrar til en bærekraftig og enkel måte å komme i gang med rulleski på, slik at alle kan oppleve skiglede året rundt.</p>
+        </section>
+
+        <section>
+            <h2>For hvem?</h2>
+            <p>Skibremsen er laget for dem som:</p>
+            <ul>
+                <li>Ønsker å begynne med rulleski</li>
+                <li>Vil prioritere sikkerhet under trening</li>
+                <li>Ser etter en trygg og brukervennlig løsning</li>
+            </ul>
+        </section>
+
+        <div class="placeholder">
+            <img src="placeholder.jpg" alt="Produktbilder kommer snart">
+        </div>
+
+        <div class="cta">
+            <h2>Bli en del av Skibremsen-familien!</h2>
+            <p>Følg oss på sosiale medier for å holde deg oppdatert på bedriften vår.</p>
+            <a href="mailto:skibremsn.ub@gmail.com">Kontakt oss</a>
+        </div>
+    </div>
 
     <footer>
-        <p>© 2024 - Alle rettigheter reservert | Kontakt: <a href="mailto:eksempel@epost.no">eksempel@epost.no</a></p>
+        <p>© 2024 Skibremsen | Kontakt: <a href="mailto:skibremsn.ub@gmail.com">skibremsn.ub@gmail.com</a></p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/skibremsnub?igsh=aGZlaDRsNGc5NTMz" target="_blank">
+                <img src="instagram-logo1.png" alt="Instagram-logo for Skibremsen UB">
+            </a>
+        </div>
     </footer>
-
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('.mobile-menu');
-            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-        }
-    </script>
 </body>
 </html>
