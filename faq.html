@@ -4,7 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Fargepalett */
+        :root {
+            --primary-color: orange;
+            --secondary-color: black;
+            --background-color: white;
+            --text-color: black;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: var(--secondary-color);
+            color: var(--background-color);
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background-color: var(--secondary-color);
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: var(--background-color);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        section li {
+            margin-bottom: 20px;
+        }
+
+        section li strong {
+            display: block;
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+        }
+
+        section li em {
+            display: block;
+            margin-top: 5px;
+            font-style: italic;
+            color: var(--text-color);
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--background-color);
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,18 +117,37 @@
         <a href="faq.html">FAQ</a>
     </nav>
 
-    <section>
-        <h2>Vanlige spørsmål</h2>
-        <p>Her finner du svar på ofte stilte spørsmål:</p>
-        <ul>
-            <li><strong>Spørsmål 1:</strong> Hvordan kan jeg bestille? <br> <em>Du kan bestille via vår nettside eller kontakte oss direkte.</em></li>
-            <li><strong>Spørsmål 2:</strong> Hva er leveringstiden? <br> <em>Normalt leverer vi innen 3-5 virkedager.</em></li>
-            <li><strong>Spørsmål 3:</strong> Kan jeg returnere varer? <br> <em>Ja, du kan returnere varer innen 14 dager.</em></li>
-        </ul>
-    </section>
+    <div class="container">
+        <section>
+            <h2>Vanlige spørsmål</h2>
+            <p>Her finner du svar på ofte stilte spørsmål:</p>
+            <ul>
+                <li>
+                    <strong>Hvordan kan jeg bestille?</strong>
+                    <em>Du kan bestille via vår nettside eller kontakte oss direkte.</em>
+                </li>
+                <li>
+                    <strong>Hva er leveringstiden?</strong>
+                    <em>Normalt leverer vi innen 3-5 virkedager.</em>
+                </li>
+                <li>
+                    <strong>Kan jeg returnere varer?</strong>
+                    <em>Ja, du kan returnere varer innen 14 dager.</em>
+                </li>
+                <li>
+                    <strong>Har dere garanti på produktene?</strong>
+                    <em>Ja, vi tilbyr en garanti på 2 år for alle våre produkter.</em>
+                </li>
+                <li>
+                    <strong>Hvordan kan jeg kontakte kundeservice?</strong>
+                    <em>Du kan kontakte oss på e-post via <a href="mailto:skibremsn.ub@gmail.com">skibremsn.ub@gmail.com</a>.</em>
+                </li>
+            </ul>
+        </section>
+    </div>
 
     <footer>
-        <p>© 2024 - Alle rettigheter reservert</p>
+        <p>© 2024 Skibremsen | Alle rettigheter reservert</p>
     </footer>
 </body>
 </html>
