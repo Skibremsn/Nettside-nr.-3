@@ -1,13 +1,96 @@
-rmasjonssiden)
-html
-Kopier kode
 <!DOCTYPE html>
 <html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informasjon</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Fargepalett */
+        :root {
+            --primary-color: orange;
+            --secondary-color: black;
+            --background-color: white;
+            --text-color: black;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: var(--secondary-color);
+            color: var(--background-color);
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background-color: var(--secondary-color);
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: var(--background-color);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        section p {
+            margin-bottom: 20px;
+        }
+
+        section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--background-color);
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,13 +104,21 @@ Kopier kode
         <a href="faq.html">FAQ</a>
     </nav>
 
-    <section>
-        <h2>Viktig informasjon</h2>
-        <p>Her finner du informasjon om våre tjenester, produkter og tilbud.</p>
-    </section>
+    <div class="container">
+        <section>
+            <h2>Viktig informasjon</h2>
+            <p>Her finner du informasjon om våre tjenester, produkter og tilbud.</p>
+            <ul>
+                <li>Vi tilbyr rulleskibremser som gir økt sikkerhet for nybegynnere og erfarne brukere.</li>
+                <li>Vårt produkt er designet for enkel montering og brukervennlighet.</li>
+                <li>Vi jobber kontinuerlig med innovasjon for å sikre den beste opplevelsen for våre kunder.</li>
+            </ul>
+            <p>Vår visjon er å gjøre rulleski trygt og tilgjengelig for alle. Med Skibremsen ønsker vi å kombinere sikkerhet og skiglede året rundt.</p>
+        </section>
+    </div>
 
     <footer>
-        <p>© 2024 - Alle rettigheter reservert</p>
+        <p>© 2024 Skibremsen | Alle rettigheter reservert</p>
     </footer>
 </body>
 </html>
