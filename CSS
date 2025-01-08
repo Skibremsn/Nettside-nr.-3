@@ -43,3 +43,19 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.social-media {
+    display: flex;
+    justify-content: center; /* Sentrerer innholdet */
+    align-items: center;    /* Vertikal justering */
+    margin-top: 10px;
+}
+
+.social-media a img {
+    width: 40px; /* Størrelse på logoen */
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-media a img:hover {
+    transform: scale(1.2); /* Effekt ved hover */
+}
