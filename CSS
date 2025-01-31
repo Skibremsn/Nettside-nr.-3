@@ -59,7 +59,7 @@ footer {
 .social-media a img:hover {
     transform: scale(1.2); /* Effekt ved hover */
 }
-.4 img {
+.extra-image img {
     max-width: 100%;
     height: auto;
     display: block;
