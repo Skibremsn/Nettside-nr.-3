@@ -59,7 +59,10 @@ footer {
 .social-media a img:hover {
     transform: scale(1.2); /* Effekt ved hover */
 }
-.Sponsor img {
-    max-width: 200px; /* Juster etter behov */
-    height: auto; /* Bevarer proporsjonene */
+.extra-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
 }
