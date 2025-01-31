@@ -60,7 +60,7 @@ footer {
     transform: scale(1.2); /* Effekt ved hover */
 }
 .extra-image img {
-    max-width: 100%;
+    max-width: 100px;
     height: auto;
     display: block;
     margin: 20px auto;
